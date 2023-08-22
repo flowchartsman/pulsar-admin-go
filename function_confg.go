@@ -87,6 +87,6 @@ type FunctionConfig struct {
 	MaxPendingAsyncRequests int `json:"maxPendingAsyncRequests,omitempty" yaml:"maxPendingAsyncRequests"`
 	//nolint
 	ExposePulsarAdminClientEnabled bool   `json:"exposePulsarAdminClientEnabled" yaml:"exposePulsarAdminClientEnabled"`
-	SkipToLatest                   bool   `json:"skipToLatest" yaml:"skipToLatest"`
+	SkipToLatest                   bool   `json:"skipToLatest,omitempty" yaml:"skipToLatest"`
 	SubscriptionPosition           string `json:"subscriptionPosition,omitempty" yaml:"subscriptionPosition"`
 }
